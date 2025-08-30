@@ -6,6 +6,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+h1{
+    text-align: center;
+    color: #fff;
+}
 section{
     position: relative;
     width: 100%;
@@ -142,3 +146,74 @@ header .navegation li a{
 .boxImg .img2{ transform: rotate(2deg); }
 .boxImg .img3{ transform: rotate(-5deg); }
 .boxImg .img4{ transform: rotate(5deg); }
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto; /* centraliza */
+  margin-top: 20%;
+}
+
+    .card {
+      background: white;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      position: relative;
+      transition: transform 0.2s ease;
+      
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card::before {
+      content: "";
+      display: block;
+      height: 5px;
+      background: #800020; /* vermelho vinho */
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .card h3 {
+      margin: 20px 0 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .arrow {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      position: absolute;
+      bottom: 15px;
+      right: 20px;
+    }
+    .cursos {
+  background: #121212;
+  padding: 80px 50px;   /* espaço em cima e nos lados */
+}
+
+.cursos h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px; /* espaço entre o título e as caixas */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
