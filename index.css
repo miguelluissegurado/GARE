@@ -10,17 +10,22 @@ h1{
     text-align: center;
     color: #fff;
 }
-section{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #121212;
-    overflow: hidden;
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  background: #121212;
+  overflow: hidden;
 }
+
+/* aplica flex só no primeiro section */
+section:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .circle{
     position: absolute;
     top: 0;
@@ -154,17 +159,16 @@ header .navegation li a{
   gap: 50px;
   max-width: 1200px;
   margin: 0 auto; /* centraliza */
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
     .card {
       background: white;
       border-radius: 4px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 20px;
+      padding: 40px;
       position: relative;
       transition: transform 0.2s ease;
-      
     }
 
     .card:hover {
@@ -175,7 +179,7 @@ header .navegation li a{
       content: "";
       display: block;
       height: 5px;
-      background: #800020; /* vermelho vinho */
+      background: #e51e2a; 
       position: absolute;
       top: 0;
       left: 0;
@@ -203,17 +207,6 @@ header .navegation li a{
       bottom: 15px;
       right: 20px;
     }
-    .cursos {
-  background: #121212;
-  padding: 80px 50px;   /* espaço em cima e nos lados */
-}
-
-.cursos h1 {
-  color: #fff;
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 40px; /* espaço entre o título e as caixas */
-  text-transform: uppercase;
-  letter-spacing: 2px;
+h1{
+    margin-top: 10%;
 }
